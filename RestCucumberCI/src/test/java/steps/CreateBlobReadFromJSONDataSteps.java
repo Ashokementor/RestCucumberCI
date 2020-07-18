@@ -83,7 +83,7 @@ public class CreateBlobReadFromJSONDataSteps {
 	
 	@Then("the response status code is {string}")
 	public void the_response_status_code_is(String SC_CREATED) {
-		SC_CREATED = "200";
+		//SC_CREATED = "200";
 	    response.
 	    	then().
 	    		assertThat().statusCode(is(equalTo(Integer.parseInt(SC_CREATED))));
